@@ -1,0 +1,48 @@
+#ball1{
+    display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    animation : bounce 0.5s ease;
+    animation-direction: alternate ;
+    animation-iteration-count: infinite;
+    object-fit: cover;
+}
+#ball2{
+    display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: green;
+    animation : bounce1 0.5s ease;
+    animation-direction: alternate ;
+    animation-iteration-count: infinite;
+    object-fit: cover;
+}
+@keyframes bounce {
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(1000px,0,0);
+    }
+    
+}
+@keyframes bounce1 {
+    from{
+        transform: translate3d(1000px,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+    
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
